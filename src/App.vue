@@ -3,17 +3,19 @@
         <p> The toggle button: </p>
         <OnOff></OnOff>
         <Counter></Counter>
+		<Options></Options>
     </main>
 </template>
 
 <script>
 import OnOff from './components/onoff/OnOff.vue'
 import Counter from './components/counter/Counter.vue'
+import Options from './components/options/Options.vue'
 
 export default {
     name: 'App',
     components: {
-        OnOff, Counter
+        OnOff, Counter, Options
     }
 }
 </script>
