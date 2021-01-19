@@ -1,6 +1,7 @@
 <template>
-	<div>
-		<button @click="increase"> Öka värde </button>
+	<div class="component">
+		<button class="increase" @click="increase"> Öka värde </button>
+		<button class="decrease" @click="decrease"> Minska värde </button>
 		<span class="result"> {{ value }} </span>
 	</div>
 </template>
@@ -13,6 +14,9 @@ export default {
 	methods: {
 		increase() {
 			this.value++
+		},
+		decrease() {
+			this.value--
 		}
 	}
 }
@@ -20,6 +24,9 @@ export default {
 
 <style scoped>
 .component {
-
+	margin: 1em;
+}
+.component button {
+	margin-right: 1em;
 }
 </style>
