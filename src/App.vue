@@ -4,6 +4,7 @@
         <OnOff></OnOff>
         <Counter></Counter>
 		<Options></Options>
+        <ShowHide></ShowHide>
     </main>
 </template>
 
@@ -11,11 +12,12 @@
 import OnOff from './components/onoff/OnOff.vue'
 import Counter from './components/counter/Counter.vue'
 import Options from './components/options/Options.vue'
+import ShowHide from './components/onoff/ShowHide.vue'
 
 export default {
     name: 'App',
     components: {
-        OnOff, Counter, Options
+        OnOff, Counter, Options, ShowHide
     }
 }
 </script>
