@@ -7,7 +7,7 @@
                 @click="changeContent(item.heading)"
                 > {{ item.heading }} </button>
 		</div>
-		<TabContent content="wrapper.find(selektor) letar upp ett HTML element med hjälp av en CSS-selektor"></TabContent>
+		<TabContent :content="selectedContent"></TabContent>
     </div>
 </template>
 
@@ -35,7 +35,9 @@ export default {
     }),
     methods: {
         changeContent(heading) {
-
+            const element = this.changeableContent.find(
+                item => heading === item.heading);
+            this.selectedContent = element.content;
         }
     }
 }
